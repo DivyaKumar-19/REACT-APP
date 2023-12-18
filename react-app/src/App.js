@@ -1,16 +1,13 @@
-/**import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import React, { Component } from 'react'
-import Signup from './Components/Signup'
-import LoginForm from './Components/LoginForm'
+/**import React, { Component } from 'react'
+import Home from './Components/Home'
+
 
  class App extends Component {
   render() {
     return (  
-      <BrowserRouter>
-      <Routes>
-        <Route path="/Signup" element={<Signup/ >} />
-        <Route path="/" element={<LoginForm/ >} />
-        </Routes></BrowserRouter>
+     
+        <Home></Home>
+        
     )
   }
 }
@@ -26,7 +23,7 @@ import Signup from './Components/Signup';
     return (  
       <BrowserRouter>
       <Routes>
-        <Route path="/Signin" element={<Signup/ >} />
+        <Route path="/Signup" element={<Signup/ >} />
         <Route path="/" element={<LoginForm/ >} />
         </Routes></BrowserRouter>
     )
